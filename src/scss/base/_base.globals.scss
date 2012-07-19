@@ -1,0 +1,35 @@
+// Body:
+// ====
+body {
+  font: #{$masterFontSize / 16}em/#{$masterNumber / $masterFontSize}em Arial;
+  margin-bottom: #{$masterNumber * 2}px;
+}
+// Heading:
+// =======
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+// Paragraph:
+// =========
+p {
+  margin-top: #{$masterNumber}px;
+}
+// Links:
+// =====
+a, a:visited {
+  color: $color-1;
+}
+a:hover {
+  color: $color-3;
+}
+// Box Sizing:
+// ==========
+// @link http://css3please.com/
+* {
+  @include box-sizing(border-box);
+}

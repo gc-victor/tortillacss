@@ -1,0 +1,46 @@
+// Example:
+// =======
+// <div class="margin-l">
+//   <div class="margin-xl"></div>
+//   <div class="margin-m"></div>
+// </div>
+
+// Margins:
+// =======
+// Margin extra extra large
+.margin-xxl {
+  margin-top: #{$masterNumberXXL}px;
+}
+// Margin extra large
+.margin-xl {
+  margin-top: #{$masterNumberXL}px;
+}
+// Margin large
+.margin-l {
+  margin-top: #{$masterNumber}px;
+}
+// Margin medium
+.margin-m {
+  margin-top: #{$masterNumberM}px;
+}
+// Margin auto:
+// ===========
+.margin-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+// Paddings:
+// ========
+// Padding medium
+.padding {
+  padding: #{$masterNumberM}px;
+}
+// Padding right, left and bottom medium
+@each $paddingPlace in top, right, left, bottom {
+  .padding-#{$paddingPlace} {
+    padding-#{$paddingPlace}: #{$masterNumber}px;
+  }
+  .padding-#{$paddingPlace}m {
+    padding-#{$paddingPlace}: #{$masterNumberM}px;
+  }
+}

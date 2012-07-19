@@ -1,0 +1,12 @@
+// Core:
+// ====
+@import "core/_core.vars.scss";
+@import "core/_core.functions.scss";
+// _base.decorations.scss:
+// ======================
+.border-0 {
+  margin-bottom: -#{$border-s / 2}px;
+}
+.border-1 {
+  margin-bottom: -#{$border-s / 2}px;
+}

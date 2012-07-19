@@ -1,0 +1,34 @@
+/* line 11, E:/My Apps/tortillacss/src/scss/base/_base.grids.scss */
+.row {
+  width: 599px;
+}
+
+/* line 16, E:/My Apps/tortillacss/src/scss/base/_base.grids.scss */
+.gutter {
+  margin-right: 13px;
+}
+
+/* line 22, E:/My Apps/tortillacss/src/scss/base/_base.grids.scss */
+.columns-1 {
+  width: 89px;
+}
+
+/* line 22, E:/My Apps/tortillacss/src/scss/base/_base.grids.scss */
+.columns-2 {
+  width: 191px;
+}
+
+/* line 22, E:/My Apps/tortillacss/src/scss/base/_base.grids.scss */
+.columns-3 {
+  width: 293px;
+}
+
+/* line 22, E:/My Apps/tortillacss/src/scss/base/_base.grids.scss */
+.columns-4 {
+  width: 395px;
+}
+
+/* line 22, E:/My Apps/tortillacss/src/scss/base/_base.grids.scss */
+.columns-5 {
+  width: 497px;
+}

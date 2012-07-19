@@ -1,0 +1,32 @@
+// Show base line:
+// ==============
+body {
+  background-image:url(http://basehold.it/image.php?height=21);
+}
+// Grid test:
+// ========
+.grid-test {
+  @include border-radius(5px);
+  background: $color-1;
+  color: $color-0;
+  font-weight: bold;
+  height: #{$masterNumber}px;
+  line-height: #{$masterNumber}px;
+  text-align: center;
+}
+// Columns test:
+// ============
+.columns-test {
+  background: #FFC4C4;
+  height: 210px;
+  .inner {
+    height: 100%;
+  }
+  > .inner {
+    background: #FFE6E6;
+    > .inner {
+      background: #fff8fa;
+
+    }
+  }
+}

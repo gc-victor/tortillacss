@@ -1,0 +1,35 @@
+// Font sizes:
+// ==========
+.font-xxl {
+  font-size: fontSize($font-xxl, $masterFontSize);
+  line-height: lineHeight($font-xxl, 3);
+}
+.font-xl {
+  font-size: fontSize($font-xl, $masterFontSize);
+  line-height: lineHeight($font-xl, 2);
+}
+.font-l {
+  font-size: fontSize($font-l, $masterFontSize);
+  line-height: lineHeight($font-l);
+}
+.font-m {
+  font-size: fontSize($font-m, $masterFontSize);
+  line-height: lineHeight($font-m);
+}
+.font-s {
+  font-size: fontSize($font-s, $masterFontSize);
+  line-height: lineHeight($font-s);
+}
+// Line Height:
+// ===========
+.line-height-1 {
+  line-height: 1em;
+}
+// Font Weight:
+// ===========
+.font-weight-normal {
+  font-weight: normal;
+}
+.font-weight-bold {
+  font-weight: bold;
+}

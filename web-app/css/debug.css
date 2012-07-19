@@ -1,0 +1,459 @@
+/* line 3, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+body:before {
+  content: "DEBUG MODE" !important;
+  color: #fff !important;
+  background-color: red !important;
+  position: fixed !important;
+  padding: 10px !important;
+  z-index: 999 !important;
+  /*  opacity: 0.4 !important */
+}
+
+/* *:hover { outline: 1px dotted #66FF00 !important } */
+/* line 15, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+img:hover {
+  opacity: 0.1 !important;
+}
+
+/* line 18, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+* {
+  background-color: #000 !important;
+  background-image: none !important;
+  border-color: #000 !important;
+  color: #fff !important;
+  outline: 1px dotted #fff !important;
+}
+
+/* line 27, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+* * {
+  background-color: #111 !important;
+  border-color: #111 !important;
+}
+
+/* line 33, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+* * * {
+  background-color: #222 !important;
+  border-color: #222 !important;
+}
+
+/* line 39, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+* * * * {
+  background-color: #333 !important;
+  border-color: #333 !important;
+}
+
+/* line 45, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+* * * * * {
+  background-color: #444 !important;
+  border-color: #444 !important;
+}
+
+/* line 51, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+* * * * * * {
+  background-color: #555 !important;
+  border-color: #555 !important;
+}
+
+/* line 57, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+* * * * * * * {
+  background-color: #666 !important;
+  border-color: #666 !important;
+}
+
+/* line 63, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+* * * * * * * * {
+  background-color: #777 !important;
+  border-color: #777 !important;
+}
+
+/* line 69, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+* * * * * * * * * {
+  background-color: #888 !important;
+  border-color: #888 !important;
+}
+
+/* line 75, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+* * * * * * * * * * {
+  background-color: #999 !important;
+  border-color: #999 !important;
+}
+
+/***********/
+/* LICENSE */
+/***********/
+/* Copyrights for code authored by Yahoo! Inc. is licensed under the following terms:
+   MIT License
+   Copyright (c) 2011 Yahoo! Inc. All Rights Reserved.
+   Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+   The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
+/*****************/
+/* WHAT IS THIS? */
+/*****************/
+/* debugCSS is meant to be loaded on an existing page to highlight potentially
+   broken, malformed or legacy (X)HTML.  Not all "errors" are created equally,
+   so they are color coded to highlight severity.  Green is "probably not a big
+   problem", yellow is "worth looking at" and red is "you really should fix
+   this."  Red severity is currently not used, but can be made available for
+   future revisions.
+
+   Red: #FF8888;
+   Yellow: #FFFF88;
+   Green: #88FF88;
+*/
+/******************/
+/* ERROR MESSAGES */
+/******************/
+/* All errors should try to post a message explaining the problem. */
+/* line 193, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+table:not([summary]):after,
+table > tr:after,
+table th:not([scope]):after,
+table thead td:after,
+table > tbody:first-child:after,
+table > tbody + tfoot:after,
+table > tr:first-child:last-child:after,
+table > tbody > tr:first-child:last-child:after,
+table > *:not(thead):not(tfoot):not(tbody):not(tr):not(colgroup):not(caption):after,
+table[align]:after,
+table[bgcolor]:after,
+table[border]:after,
+table[cellpadding]:after,
+table[cellspacing]:after,
+table[width]:after,
+img:not([alt]):after,
+a:not([href]):after,
+a[href="#"]:after,
+a[href*=javascript\:]:after,
+a[onclick]:after,
+a[onmouseover]:after,
+a[onmouseout]:after,
+label:not([for]):after,
+nav:not([role]):after,
+div[role="img"]:not([aria-label]):after,
+h1 div:after,
+h2 div:after,
+h3 div:after,
+h4 div:after,
+h5 div:after,
+h6 div:after,
+span div:after,
+html[xmlns] a div:after,
+html[xmlns] a h1:after,
+html[xmlns] a h2:after,
+html[xmlns] a h3:after,
+html[xmlns] a h4:after,
+html[xmlns] a h5:after,
+html[xmlns] a h6:after,
+ol > *:not(li),
+ul > *:not(li),
+dl > *:not(dt):not(dd):after,
+form > *:not(fieldset):after,
+fieldset > *:not(legend):first-child:after,
+iframe:not([title]):after,
+center:after,
+u:after,
+font:after,
+map:after,
+br + *:not(br):before,
+br + br + *:before,
+b:after,
+i:after,
+blink:after,
+marquee:after {
+  border: 1px solid #000;
+  color: #000;
+  display: block;
+  font-family: helvetica;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1.3em;
+  padding: .1em .3em;
+  position: absolute;
+  text-decoration: none;
+  text-transform: none;
+  z-index: 99999;
+}
+
+/* Each error message will have a color for severity (green, yellow, red) and a
+   message.  Even if the content isn't able to be displayed (such as with
+   images), they're used so you can quickly see the message when inspecting the
+   element.
+*/
+/* line 215, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+table:not([summary]):after {
+  background: #88FF88;
+  content: 'Should you have a SUMMARY attribute on your TABLE?';
+}
+
+/* line 220, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+table > tr:after {
+  background: #FFFF88;
+  content: 'TABLE does not have a TBODY.';
+}
+
+/* line 225, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+table th:not([scope]):after {
+  background: #88FF88;
+  content: 'Should TH have a SCOPE attribute (ROW or COL)?.';
+}
+
+/* line 230, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+table thead td:after {
+  background: #88FF88;
+  content: 'Cells in THEAD should be TH.';
+}
+
+/* line 235, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+table > tbody:first-child:after {
+  background: #88FF88;
+  content: 'Do you need a THEAD or TFOOT?';
+}
+
+/* line 240, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+table > tbody + tfoot:after {
+  background: #FFFF88;
+  content: 'TBODY should come after TFOOT.';
+}
+
+/* line 246, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+table > tr:first-child:last-child:after,
+table > tbody > tr:first-child:last-child:after {
+  background: #88FF88;
+  content: 'Only one TR in TABLE.  Are you using it for layout?';
+}
+
+/* line 251, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+table > *:not(thead):not(tfoot):not(tbody):not(tr):not(colgroup):not(caption):after {
+  background: #FFFF88;
+  content: 'Only THEAD/TFOOT/TBODY/COLGROUP/CAPTION/TR can be children of a TABLE';
+}
+
+/* line 261, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+table[align]:after,
+table[bgcolor]:after,
+table[border]:after,
+table[cellpadding]:after,
+table[cellspacing]:after,
+table[width]:after {
+  background: #FFFF88;
+  content: 'Element has inline style.';
+}
+
+/* line 266, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+img:not([alt]):after {
+  background: #FFFF88;
+  content: 'Image does not have an ALT attribute.';
+}
+
+/* line 272, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+a[href="#"]:after,
+a:not([href]):after {
+  background: #FFFF88;
+  content: 'Anchor tag is # or does not exist - does not degrade gracefully.';
+}
+
+/* line 280, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+a[href*=javascript\:]:after,
+a[onclick]:after,
+a[onmouseover]:after,
+a[onmouseout]:after {
+  background: #FFFF88;
+  content: 'Inline JS on anchor.';
+}
+
+/* line 285, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+label:not([for]):after {
+  background: #FFFF88;
+  content: 'Should LABEL have a FOR attribute?';
+}
+
+/* line 290, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+nav:not([role]):after {
+  background: #FFFF88;
+  content: 'NAV element should have a ROLE attribute.';
+}
+
+/* line 295, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+div[role="img"]:not([aria-label]):after {
+  background: #FFFF88;
+  content: 'DIV used as image should have ARIA-LABEL.';
+}
+
+/* line 313, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+h1 div:after,
+h2 div:after,
+h3 div:after,
+h4 div:after,
+h5 div:after,
+h6 div:after,
+span div:after,
+html[xmlns] a div:after,
+html[xmlns] a h1:after,
+html[xmlns] a h2:after,
+html[xmlns] a h3:after,
+html[xmlns] a h4:after,
+html[xmlns] a h5:after,
+html[xmlns] a h6:after {
+  background: #FFFF88;
+  content: 'Block level element within inline element.';
+}
+
+/* line 319, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+ol > *:not(li):after,
+ul > *:not(li):after {
+  background: #FFFF88;
+  content: 'Only LIs can be children of UL or OL';
+}
+
+/* line 324, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+dl > *:not(dt):not(dd):after {
+  background: #FFFF88;
+  content: 'Only DT/DD can be children of a DL';
+}
+
+/* line 329, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+form > *:not(fieldset):after {
+  background: #88FF88;
+  content: 'Should you be using a FIELDSET?';
+}
+
+/* line 334, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+fieldset > *:not(legend):first-child:after {
+  background: #88FF88;
+  content: 'Should your FIELDSET be using a LEGEND?';
+}
+
+/* line 339, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+iframe:not([title]):after {
+  background: #88FF88;
+  content: 'IFRAME lacks TITLE attribute.';
+}
+
+/* line 346, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+center:after,
+u:after,
+font:after {
+  background: #FFFF88;
+  content: 'Deprecated tag used.';
+}
+
+/* These may not be "wrong", but let's bug you anyway. */
+/* line 352, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+map:after {
+  background: #88FF88;
+  content: 'Is MAP appropriate here?';
+}
+
+/* line 357, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+br + *:not(br):before {
+  background: #88FF88;
+  content: 'Is BR appropriate here?';
+}
+
+/* line 362, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+br + br + *:before {
+  background: #88FF88;
+  content: 'Should you be using a P tag?';
+}
+
+/* line 368, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+b:after,
+i:after {
+  background: #88FF88;
+  content: 'Should you be using STRONG or EM?';
+}
+
+/* line 374, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+blink:after,
+marquee:after {
+  background: #FFFF88;
+  content: 'Should you be using STRONG or EM?';
+}
+
+/******************/
+/* ERROR OUTLINES */
+/******************/
+/* In addition to printing the error message next to the element, outline the
+   element so it's easy to spot.  Use outline instead of border to avoid
+   messing with the document flow.
+*/
+/* line 399, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+table:not([summary]),
+table th:not([scope]),
+table thead td,
+table > tr:first-child:last-child,
+table > tbody > tr:first-child:last-child,
+table > tbody:first-child,
+form > *:not(fieldset),
+fieldset > *:not(legend):first-child,
+map,
+br,
+b,
+i {
+  outline: 5px solid #88FF88;
+}
+
+/* line 444, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+table > tr,
+table > tbody + tfoot,
+table > *:not(thead):not(tfoot):not(tbody):not(tr):not(colgroup):not(caption),
+table[align],
+table[bgcolor],
+table[border],
+table[cellpadding],
+table[cellspacing],
+table[width],
+img:not([alt]),
+a:not([href]),
+a[href="#"],
+a[href*=javascript\:],
+a[onclick],
+a[onmouseover],
+a[onmouseout],
+label:not([for]),
+nav:not([role]),
+div[role="img"]:not([aria-label]),
+h1 div,
+h2 div,
+h3 div,
+h4 div,
+h5 div,
+h6 div,
+span div,
+html[xmlns] a div,
+html[xmlns] a h1,
+html[xmlns] a h2,
+html[xmlns] a h3,
+html[xmlns] a h4,
+html[xmlns] a h5,
+html[xmlns] a h6,
+ol > *:not(li),
+ul > *:not(li),
+dl > *:not(dt):not(dd),
+iframe:not([title]),
+center,
+u,
+font,
+blink,
+marquee {
+  outline: 5px solid #FFFF88;
+}
+
+/*********/
+/* EXTRA */
+/*********/
+/* Stuff that helps in developing / debugging, but don't quite fit anywhere
+   else.
+*/
+/* line 456, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+body > img:only-child {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAgMAAAAOFJJnAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAlQTFRF/+Pj2tra2dnZ4Z9gVgAAAHxJREFUGBkFwUGKxDAQBDB9shqcuw2T/3TAc5+A95UruZv+IoNqvEWCavLFDB2M5vPgGpyFNOcB80cPJMxgHhLkQ4IxuBorpDA3Y+MazEfC2+gwgnOxHnSogb15F1JcGxmkcBb1AwlVqCIHadZGwt+NGmQhD1lIuB+scOUfnCk3BP0u5SsAAAAASUVORK5CYII=);
+  border: 50px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: block;
+  margin: 1em auto;
+  padding: 0;
+}

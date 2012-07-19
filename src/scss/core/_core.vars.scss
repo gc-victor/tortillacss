@@ -1,0 +1,47 @@
+// Global var:
+// ==========
+$this: '';
+// Master font size:
+// ===============
+// @link http://jsfiddle.net/csswizardry/vTKba/
+$masterFontSize: 13;
+// Master number:
+// ============
+$masterNumber: 21;
+$masterNumberXXL: #{$masterNumber * 3};
+$masterNumberXL: #{$masterNumber * 2};
+$masterNumberM: #{$masterNumber / 2};
+// Row width:
+// =========
+$rowWidth: '';
+// Column width:
+// ============
+$columnWidth: 89;
+// Gutter width:
+// ============
+$gutterWidth: 13;
+// Columns number:
+// ==============
+$columnsNumber: 6;
+// Font sizes:
+// ==========
+$font-xxl: 36;
+$font-xl: 21;
+$font-l: 13;
+$font-m: 11;
+$font-s: 10;
+// Colors:
+// ======
+$color-0: #fff;
+$color-1: #222;
+$color-2: #444;
+$color-3: #888;
+// Background:
+// ==========
+$background-0: #fff;
+$background-1: #222;
+$background-2: #444;
+$background-3: #888;
+// Borders:
+// ======
+$border-s: 1;

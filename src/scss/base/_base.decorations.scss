@@ -1,0 +1,17 @@
+// Border Radius:
+// =============
+.border-radius {
+  @include border-radius(5px);
+}
+// Border:
+// ======
+.border-0 {
+  border-top: #{$border-s}px solid $color-1;
+  margin-bottom: -#{$border-s}px;
+  // ie hack: margin-bottom: -#{$border-s / 2}px;
+}
+.border-1 {
+  border-top: #{$border-s}px dotted $color-1;
+  margin-bottom: -#{$border-s}px;
+  // ie hack: margin-bottom: -#{$border-s / 2}px;
+}

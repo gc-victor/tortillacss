@@ -1,0 +1,25 @@
+// Example:
+// =======
+// <div class="row">
+//   <div class="columns-1 gutter"></div>
+//   <div class="columns-1 gutter"></div>
+//   <div class="columns-1"></div>
+// </div>
+
+// Row:
+// ===
+.row {
+  width: rowWidth();
+}
+// Gutter:
+// ======
+.gutter {
+  margin-right: #{$gutterWidth}px;
+}
+// Columns:
+// =======
+@for $i from 1 through ($columnsNumber - 1) {
+  .columns-#{$i} {
+    width: columnWidth($i);
+  }
+}

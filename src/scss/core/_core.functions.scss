@@ -1,0 +1,32 @@
+// Row width:
+// =========
+@function rowWidth() {
+  @if $rowWidth == '' {
+    $this: ($columnWidth * $columnsNumber) + ($gutterWidth * ($columnsNumber - 1));
+  } @else {
+    $this: $rowWidth;
+  }
+  @return #{$this}px;
+}
+// Column width:
+// ============
+@function columnWidth($this) {
+  $l: $this - 1;
+  @if $this == 1 {
+    $this: $columnWidth;
+  } @else {
+    $this: ($columnWidth * $this) + ($gutterWidth * $l);
+  }
+  @return #{$this}px;
+}
+// Font size:
+// =========
+@function fontSize($this, $masterFontSize) {
+  @return #{$this / $masterFontSize}em;
+}
+// Line height:
+// ===========
+$lineHeightNTimes: 1;
+@function lineHeight($this, $lineHeightNTimes, $masterNumber) {
+  @return  #{($masterNumber / $this) * $lineHeightNTimes}em;
+}

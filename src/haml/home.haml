@@ -1,0 +1,71 @@
+!!! 5
+%html
+  %head
+    %meta{"charset" => "utf-8"}
+    %title Tortilla Framework
+    %link(rel="stylesheet" type="text/css" href="../css/master.css")
+    /[if IE]
+      %link(rel="stylesheet" type="text/css" href="../css/ie.css")
+    /[if lt IE 9]
+      %script{:src => "http://html5shiv.googlecode.com/svn/trunk/html5.js"}
+  %body
+    #header.clearfix.row.margin-xxl.margin-auto{:role => "banner"}
+      %hgroup.float-left
+        %h1.font-xxl Tortilla Framework
+        %h2.font-xl.line-height-1.font-weight-normal Helps you write maintainable apps.
+      %ul.margin-l.float-right{:role => "navigation" }
+        %li.float-left
+          %a{:href => "#space"} Space
+        %li.float-left.padding-leftm
+          %a{:href => "#grid"} Grid
+        %li.float-left.padding-leftm
+          %a{:href => "#typography "} Typography
+    #main.row.margin-xxl.margin-auto{:role => "main"}
+      %h3#space.margin-l.padding-leftm.font-xl Space
+      -# %p Three margins sizes, just margin-top. $masterNumber (.margin-l), $masterNumber * 2 (.margin-xl) and $masterNumber * 3 (.margin-xxl).
+      %ul.clearfix.row.margin-l.border-0
+        %li.margin-xxl.border-0
+        %li.margin-xl.border-0
+        %li.margin-l.border-0
+      -# %p One padding size and 5 padding classes (.padding-topm, .padding-rightm, .padding-bottomm, .padding-leftm and all them in .padding), $masterNumber / 2.
+      %ul.clearfix.row.margin-l
+        %li.float-left.columns-1.gutter.padding-leftm.padding-rightm.columns-test
+          .inner.margin-auto.padding-right.padding-left
+            .inner.margin-auto
+        %li.float-left.columns-1.gutter.padding-leftm.padding-rightm.columns-test
+          .inner.margin-auto.padding-right.padding-left
+            .inner.margin-auto
+        %li.float-left.columns-1.gutter.padding-leftm.padding-rightm.columns-test
+          .inner.margin-auto.padding-right.padding-left
+            .inner.margin-auto
+        %li.float-left.columns-1.gutter.padding-leftm.padding-rightm.columns-test
+          .inner.margin-auto.padding-right.padding-left
+            .inner.margin-auto
+        %li.float-left.columns-1.gutter.padding-leftm.padding-rightm.columns-test
+          .inner.margin-auto.padding-right.padding-left
+            .inner.margin-auto
+        %li.float-left.columns-1.padding-leftm.padding-rightm.columns-test
+          .inner.margin-auto.padding-right.padding-left
+            .inner.margin-auto
+      %h3#grid.margin-l.padding-leftm.font-xl Grid
+      -# %p Grid system for modern browsers — IE8+, Firefox, Safari, Opera, Chrome.
+      %ul.clearfix.row.margin-l
+        %li.float-left.columns-1.gutter.grid-test 1
+        %li.float-left.columns-1.gutter.grid-test 1
+        %li.float-left.columns-1.gutter.grid-test 1
+        %li.float-left.columns-1.gutter.grid-test 1
+        %li.float-left.columns-1.gutter.grid-test 1
+        %li.float-left.columns-1.grid-test 1
+        %li.float-left.columns-2.gutter.margin-l.grid-test 2
+        %li.float-left.columns-2.gutter.margin-l.grid-test 2
+        %li.float-left.columns-2.margin-l.grid-test 2
+        %li.float-left.columns-3.gutter.margin-l.grid-test 3
+        %li.float-left.columns-3.margin-l.grid-test 3
+        %li.float-left.columns-4.gutter.margin-l.grid-test 4
+        %li.float-left.columns-2.margin-l.grid-test 2
+        %li.float-left.columns-5.gutter.margin-l.grid-test 5
+        %li.float-left.columns-1.margin-l.grid-test 1
+      %h3#typography.margin-l.padding-leftm.font-xl Typography
+      %p.font-xxl.font-weight-bold Extra extra large fontsize
+      %p.font-xl Extra large fontsize
+      %p Large fontsize
