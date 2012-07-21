@@ -4,7 +4,7 @@
 ## Benefits
 
 + Less classes using OOCSS.
-+ A maintainable app.
++ Maintainable apps.
 + Transform it with some vars changes.
 
 ## Spaces
@@ -21,3 +21,7 @@ Grid system for modern browsers — IE8+, Firefox, Safari, Opera, Chrome.
 ## Typography
 
 Vertical rythm too.
+
+## Demo
+
+[http://tortillacss.wpesp.com/](http://tortillacss.wpesp.com/)
