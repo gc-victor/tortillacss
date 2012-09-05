@@ -1,4 +1,4 @@
-/* line 3, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+/* line 3, ../../src/scss/dev/_dev.debug.scss */
 body:before {
   content: "DEBUG MODE" !important;
   color: #fff !important;
@@ -10,12 +10,12 @@ body:before {
 }
 
 /* *:hover { outline: 1px dotted #66FF00 !important } */
-/* line 15, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+/* line 15, ../../src/scss/dev/_dev.debug.scss */
 img:hover {
   opacity: 0.1 !important;
 }
 
-/* line 18, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+/* line 18, ../../src/scss/dev/_dev.debug.scss */
 * {
   background-color: #000 !important;
   background-image: none !important;
@@ -24,55 +24,55 @@ img:hover {
   outline: 1px dotted #fff !important;
 }
 
-/* line 27, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+/* line 27, ../../src/scss/dev/_dev.debug.scss */
 * * {
   background-color: #111 !important;
   border-color: #111 !important;
 }
 
-/* line 33, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+/* line 33, ../../src/scss/dev/_dev.debug.scss */
 * * * {
   background-color: #222 !important;
   border-color: #222 !important;
 }
 
-/* line 39, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+/* line 39, ../../src/scss/dev/_dev.debug.scss */
 * * * * {
   background-color: #333 !important;
   border-color: #333 !important;
 }
 
-/* line 45, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+/* line 45, ../../src/scss/dev/_dev.debug.scss */
 * * * * * {
   background-color: #444 !important;
   border-color: #444 !important;
 }
 
-/* line 51, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+/* line 51, ../../src/scss/dev/_dev.debug.scss */
 * * * * * * {
   background-color: #555 !important;
   border-color: #555 !important;
 }
 
-/* line 57, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+/* line 57, ../../src/scss/dev/_dev.debug.scss */
 * * * * * * * {
   background-color: #666 !important;
   border-color: #666 !important;
 }
 
-/* line 63, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+/* line 63, ../../src/scss/dev/_dev.debug.scss */
 * * * * * * * * {
   background-color: #777 !important;
   border-color: #777 !important;
 }
 
-/* line 69, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+/* line 69, ../../src/scss/dev/_dev.debug.scss */
 * * * * * * * * * {
   background-color: #888 !important;
   border-color: #888 !important;
 }
 
-/* line 75, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+/* line 75, ../../src/scss/dev/_dev.debug.scss */
 * * * * * * * * * * {
   background-color: #999 !important;
   border-color: #999 !important;
@@ -106,7 +106,7 @@ img:hover {
 /* ERROR MESSAGES */
 /******************/
 /* All errors should try to post a message explaining the problem. */
-/* line 193, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+/* line 193, ../../src/scss/dev/_dev.debug.scss */
 table:not([summary]):after,
 table > tr:after,
 table th:not([scope]):after,
@@ -182,56 +182,56 @@ marquee:after {
    images), they're used so you can quickly see the message when inspecting the
    element.
 */
-/* line 215, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+/* line 215, ../../src/scss/dev/_dev.debug.scss */
 table:not([summary]):after {
   background: #88FF88;
   content: 'Should you have a SUMMARY attribute on your TABLE?';
 }
 
-/* line 220, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+/* line 220, ../../src/scss/dev/_dev.debug.scss */
 table > tr:after {
   background: #FFFF88;
   content: 'TABLE does not have a TBODY.';
 }
 
-/* line 225, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+/* line 225, ../../src/scss/dev/_dev.debug.scss */
 table th:not([scope]):after {
   background: #88FF88;
   content: 'Should TH have a SCOPE attribute (ROW or COL)?.';
 }
 
-/* line 230, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+/* line 230, ../../src/scss/dev/_dev.debug.scss */
 table thead td:after {
   background: #88FF88;
   content: 'Cells in THEAD should be TH.';
 }
 
-/* line 235, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+/* line 235, ../../src/scss/dev/_dev.debug.scss */
 table > tbody:first-child:after {
   background: #88FF88;
   content: 'Do you need a THEAD or TFOOT?';
 }
 
-/* line 240, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+/* line 240, ../../src/scss/dev/_dev.debug.scss */
 table > tbody + tfoot:after {
   background: #FFFF88;
   content: 'TBODY should come after TFOOT.';
 }
 
-/* line 246, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+/* line 246, ../../src/scss/dev/_dev.debug.scss */
 table > tr:first-child:last-child:after,
 table > tbody > tr:first-child:last-child:after {
   background: #88FF88;
   content: 'Only one TR in TABLE.  Are you using it for layout?';
 }
 
-/* line 251, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+/* line 251, ../../src/scss/dev/_dev.debug.scss */
 table > *:not(thead):not(tfoot):not(tbody):not(tr):not(colgroup):not(caption):after {
   background: #FFFF88;
   content: 'Only THEAD/TFOOT/TBODY/COLGROUP/CAPTION/TR can be children of a TABLE';
 }
 
-/* line 261, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+/* line 261, ../../src/scss/dev/_dev.debug.scss */
 table[align]:after,
 table[bgcolor]:after,
 table[border]:after,
@@ -242,20 +242,20 @@ table[width]:after {
   content: 'Element has inline style.';
 }
 
-/* line 266, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+/* line 266, ../../src/scss/dev/_dev.debug.scss */
 img:not([alt]):after {
   background: #FFFF88;
   content: 'Image does not have an ALT attribute.';
 }
 
-/* line 272, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+/* line 272, ../../src/scss/dev/_dev.debug.scss */
 a[href="#"]:after,
 a:not([href]):after {
   background: #FFFF88;
   content: 'Anchor tag is # or does not exist - does not degrade gracefully.';
 }
 
-/* line 280, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+/* line 280, ../../src/scss/dev/_dev.debug.scss */
 a[href*=javascript\:]:after,
 a[onclick]:after,
 a[onmouseover]:after,
@@ -264,25 +264,25 @@ a[onmouseout]:after {
   content: 'Inline JS on anchor.';
 }
 
-/* line 285, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+/* line 285, ../../src/scss/dev/_dev.debug.scss */
 label:not([for]):after {
   background: #FFFF88;
   content: 'Should LABEL have a FOR attribute?';
 }
 
-/* line 290, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+/* line 290, ../../src/scss/dev/_dev.debug.scss */
 nav:not([role]):after {
   background: #FFFF88;
   content: 'NAV element should have a ROLE attribute.';
 }
 
-/* line 295, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+/* line 295, ../../src/scss/dev/_dev.debug.scss */
 div[role="img"]:not([aria-label]):after {
   background: #FFFF88;
   content: 'DIV used as image should have ARIA-LABEL.';
 }
 
-/* line 313, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+/* line 313, ../../src/scss/dev/_dev.debug.scss */
 h1 div:after,
 h2 div:after,
 h3 div:after,
@@ -301,38 +301,38 @@ html[xmlns] a h6:after {
   content: 'Block level element within inline element.';
 }
 
-/* line 319, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+/* line 319, ../../src/scss/dev/_dev.debug.scss */
 ol > *:not(li):after,
 ul > *:not(li):after {
   background: #FFFF88;
   content: 'Only LIs can be children of UL or OL';
 }
 
-/* line 324, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+/* line 324, ../../src/scss/dev/_dev.debug.scss */
 dl > *:not(dt):not(dd):after {
   background: #FFFF88;
   content: 'Only DT/DD can be children of a DL';
 }
 
-/* line 329, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+/* line 329, ../../src/scss/dev/_dev.debug.scss */
 form > *:not(fieldset):after {
   background: #88FF88;
   content: 'Should you be using a FIELDSET?';
 }
 
-/* line 334, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+/* line 334, ../../src/scss/dev/_dev.debug.scss */
 fieldset > *:not(legend):first-child:after {
   background: #88FF88;
   content: 'Should your FIELDSET be using a LEGEND?';
 }
 
-/* line 339, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+/* line 339, ../../src/scss/dev/_dev.debug.scss */
 iframe:not([title]):after {
   background: #88FF88;
   content: 'IFRAME lacks TITLE attribute.';
 }
 
-/* line 346, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+/* line 346, ../../src/scss/dev/_dev.debug.scss */
 center:after,
 u:after,
 font:after {
@@ -341,32 +341,32 @@ font:after {
 }
 
 /* These may not be "wrong", but let's bug you anyway. */
-/* line 352, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+/* line 352, ../../src/scss/dev/_dev.debug.scss */
 map:after {
   background: #88FF88;
   content: 'Is MAP appropriate here?';
 }
 
-/* line 357, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+/* line 357, ../../src/scss/dev/_dev.debug.scss */
 br + *:not(br):before {
   background: #88FF88;
   content: 'Is BR appropriate here?';
 }
 
-/* line 362, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+/* line 362, ../../src/scss/dev/_dev.debug.scss */
 br + br + *:before {
   background: #88FF88;
   content: 'Should you be using a P tag?';
 }
 
-/* line 368, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+/* line 368, ../../src/scss/dev/_dev.debug.scss */
 b:after,
 i:after {
   background: #88FF88;
   content: 'Should you be using STRONG or EM?';
 }
 
-/* line 374, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+/* line 374, ../../src/scss/dev/_dev.debug.scss */
 blink:after,
 marquee:after {
   background: #FFFF88;
@@ -380,7 +380,7 @@ marquee:after {
    element so it's easy to spot.  Use outline instead of border to avoid
    messing with the document flow.
 */
-/* line 399, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+/* line 399, ../../src/scss/dev/_dev.debug.scss */
 table:not([summary]),
 table th:not([scope]),
 table thead td,
@@ -396,7 +396,7 @@ i {
   outline: 5px solid #88FF88;
 }
 
-/* line 444, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+/* line 444, ../../src/scss/dev/_dev.debug.scss */
 table > tr,
 table > tbody + tfoot,
 table > *:not(thead):not(tfoot):not(tbody):not(tr):not(colgroup):not(caption),
@@ -448,7 +448,7 @@ marquee {
 /* Stuff that helps in developing / debugging, but don't quite fit anywhere
    else.
 */
-/* line 456, E:/My Apps/tortillacss/src/scss/dev/_dev.debug.scss */
+/* line 456, ../../src/scss/dev/_dev.debug.scss */
 body > img:only-child {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAgMAAAAOFJJnAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAlQTFRF/+Pj2tra2dnZ4Z9gVgAAAHxJREFUGBkFwUGKxDAQBDB9shqcuw2T/3TAc5+A95UruZv+IoNqvEWCavLFDB2M5vPgGpyFNOcB80cPJMxgHhLkQ4IxuBorpDA3Y+MazEfC2+gwgnOxHnSogb15F1JcGxmkcBb1AwlVqCIHadZGwt+NGmQhD1lIuB+scOUfnCk3BP0u5SsAAAAASUVORK5CYII=);
   border: 50px solid rgba(0, 0, 0, 0.08);

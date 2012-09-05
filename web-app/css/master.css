@@ -197,18 +197,52 @@ a:hover {
   position: absolute;
 }
 
-/* line 42, ../../src/scss/base/_base.utils.scss */
+/* line 44, ../../src/scss/base/_base.utils.scss */
 .clearfix {
   *zoom: 1;
 }
-/* line 45, ../../src/scss/base/_base.utils.scss */
+/* line 47, ../../src/scss/base/_base.utils.scss */
 .clearfix:before, .clearfix:after {
   content: "";
   display: table;
 }
-/* line 49, ../../src/scss/base/_base.utils.scss */
+/* line 51, ../../src/scss/base/_base.utils.scss */
 .clearfix:after {
   clear: both;
+}
+
+/* line 58, ../../src/scss/base/_base.utils.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/* line 65, ../../src/scss/base/_base.utils.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* line 79, ../../src/scss/base/_base.utils.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/* line 90, ../../src/scss/base/_base.utils.scss */
+.invisible {
+  visibility: hidden;
 }
 
 /* line 3, ../../src/scss/base/_base.decorations.scss */
