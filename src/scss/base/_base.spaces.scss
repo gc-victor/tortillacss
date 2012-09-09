@@ -40,7 +40,7 @@
   .padding-#{$paddingPlace} {
     padding-#{$paddingPlace}: #{$masterNumber}px;
   }
-  .padding-#{$paddingPlace}m {
+  .padding-#{$paddingPlace}-m {
     padding-#{$paddingPlace}: #{$masterNumberM}px;
   }
 }
