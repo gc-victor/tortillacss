@@ -12,84 +12,162 @@
     <![endif]-->
   </head>
   <body>
-    <div class="clearfix row margin-xxl margin-auto" id="header" role="banner">
-      <hgroup class="float-left">
-        <h1 class="font-xxl">Tortilla Framework</h1>
-        <h2 class="font-xl line-height-1 font-weight-normal">Helps you write maintainable apps.</h2>
-      </hgroup>
-      <ul class="margin-l float-right" role="navigation">
-        <li class="float-left">
-          <a href="#space">Space</a>
-        </li>
-        <li class="float-left padding-leftm">
-          <a href="#grid">Grid</a>
-        </li>
-        <li class="float-left padding-leftm">
-          <a href="#typography ">Typography</a>
-        </li>
-      </ul>
-    </div>
-    <div class="row margin-xxl margin-auto" id="main" role="main">
-      <h3 class="margin-l padding-leftm font-xl" id="space">Space</h3>
-      <ul class="clearfix row margin-l border-0">
-        <li class="margin-xxl border-0"></li>
-        <li class="margin-xl border-0"></li>
-        <li class="margin-l border-0"></li>
-      </ul>
-      <ul class="clearfix row margin-l">
-        <li class="float-left columns-1 gutter padding-leftm padding-rightm columns-test">
-          <div class="inner margin-auto padding-right padding-left">
-            <div class="inner margin-auto"></div>
-          </div>
-        </li>
-        <li class="float-left columns-1 gutter padding-leftm padding-rightm columns-test">
-          <div class="inner margin-auto padding-right padding-left">
-            <div class="inner margin-auto"></div>
-          </div>
-        </li>
-        <li class="float-left columns-1 gutter padding-leftm padding-rightm columns-test">
-          <div class="inner margin-auto padding-right padding-left">
-            <div class="inner margin-auto"></div>
-          </div>
-        </li>
-        <li class="float-left columns-1 gutter padding-leftm padding-rightm columns-test">
-          <div class="inner margin-auto padding-right padding-left">
-            <div class="inner margin-auto"></div>
-          </div>
-        </li>
-        <li class="float-left columns-1 gutter padding-leftm padding-rightm columns-test">
-          <div class="inner margin-auto padding-right padding-left">
-            <div class="inner margin-auto"></div>
-          </div>
-        </li>
-        <li class="float-left columns-1 padding-leftm padding-rightm columns-test">
-          <div class="inner margin-auto padding-right padding-left">
-            <div class="inner margin-auto"></div>
-          </div>
-        </li>
-      </ul>
-      <h3 class="margin-l padding-leftm font-xl" id="grid">Grid</h3>
-      <ul class="clearfix row margin-l">
-        <li class="float-left columns-1 gutter grid-test">1</li>
-        <li class="float-left columns-1 gutter grid-test">1</li>
-        <li class="float-left columns-1 gutter grid-test">1</li>
-        <li class="float-left columns-1 gutter grid-test">1</li>
-        <li class="float-left columns-1 gutter grid-test">1</li>
-        <li class="float-left columns-1 grid-test">1</li>
-        <li class="float-left columns-2 gutter margin-l grid-test">2</li>
-        <li class="float-left columns-2 gutter margin-l grid-test">2</li>
-        <li class="float-left columns-2 margin-l grid-test">2</li>
-        <li class="float-left columns-3 gutter margin-l grid-test">3</li>
-        <li class="float-left columns-3 margin-l grid-test">3</li>
-        <li class="float-left columns-4 gutter margin-l grid-test">4</li>
-        <li class="float-left columns-2 margin-l grid-test">2</li>
-        <li class="float-left columns-5 gutter margin-l grid-test">5</li>
-        <li class="float-left columns-1 margin-l grid-test">1</li>
-      </ul>
-      <h3 class="margin-l padding-leftm font-xl" id="typography">Typography</h3>
-      <p class="font-xxl font-weight-bold">Extra extra large fontsize</p>
-      <p class="font-xl">Extra large fontsize</p>
-      <p>Large fontsize</p>
+    <div class="row margin-auto" id="container">
+      <div class="clearfix margin-xxl" id="header" role="banner">
+        <hgroup>
+          <h1 class="font-xxl">Tortilla Framework</h1>
+          <h2 class="font-xl line-height-1 font-weight-normal">Helps you write maintainable CSS/SCSS for your apps.</h2>
+        </hgroup>
+        <ul class="margin-l" role="navigation">
+          <li class="float-left">
+            <a href="#space">Space</a>
+          </li>
+          <li class="float-left padding-left-m">
+            <a href="#grid">Grid</a>
+          </li>
+          <li class="float-left padding-left-m">
+            <a href="#typography">Typography</a>
+          </li>
+          <li class="float-left padding-left-m">
+            <a href="#table">Table</a>
+          </li>
+        </ul>
+      </div>
+      <div class="margin-xxl" id="main" role="main">
+        <h3 class="margin-l padding-left-m font-xl" id="space">Space</h3>
+        <ul class="clearfix margin-l border-0">
+          <li class="margin-xxl border-0"></li>
+          <li class="margin-xl border-0"></li>
+          <li class="margin-l border-0"></li>
+        </ul>
+        <ul class="clearfix margin-l">
+          <li class="float-left columns-1 gutter padding-left-m padding-right-m columns-test">
+            <div class="inner padding-right padding-left">
+              <div class="inner"></div>
+            </div>
+          </li>
+          <li class="float-left columns-1 gutter padding-left-m padding-right-m columns-test">
+            <div class="inner padding-right padding-left">
+              <div class="inner"></div>
+            </div>
+          </li>
+          <li class="float-left columns-1 gutter padding-left-m padding-right-m columns-test">
+            <div class="inner padding-right padding-left">
+              <div class="inner"></div>
+            </div>
+          </li>
+          <li class="float-left columns-1 gutter padding-left-m padding-right-m columns-test">
+            <div class="inner padding-right padding-left">
+              <div class="inner"></div>
+            </div>
+          </li>
+          <li class="float-left columns-1 gutter padding-left-m padding-right-m columns-test">
+            <div class="inner padding-right padding-left">
+              <div class="inner"></div>
+            </div>
+          </li>
+          <li class="float-left columns-1 padding-left-m padding-right-m columns-test">
+            <div class="inner padding-right padding-left">
+              <div class="inner"></div>
+            </div>
+          </li>
+        </ul>
+        <h3 class="margin-l padding-left-m font-xl" id="grid">Grid</h3>
+        <ul class="clearfix margin-l">
+          <li class="float-left columns-1 gutter grid-test">1</li>
+          <li class="float-left columns-1 gutter grid-test">1</li>
+          <li class="float-left columns-1 gutter grid-test">1</li>
+          <li class="float-left columns-1 gutter grid-test">1</li>
+          <li class="float-left columns-1 gutter grid-test">1</li>
+          <li class="float-left columns-1 grid-test">1</li>
+          <li class="float-left columns-2 gutter margin-l grid-test">2</li>
+          <li class="float-left columns-2 gutter margin-l grid-test">2</li>
+          <li class="float-left columns-2 margin-l grid-test">2</li>
+          <li class="float-left columns-3 gutter margin-l grid-test">3</li>
+          <li class="float-left columns-3 margin-l grid-test">3</li>
+          <li class="float-left columns-4 gutter margin-l grid-test">4</li>
+          <li class="float-left columns-2 margin-l grid-test">2</li>
+          <li class="float-left columns-5 gutter margin-l grid-test">5</li>
+          <li class="float-left columns-1 margin-l grid-test">1</li>
+        </ul>
+        <h3 class="margin-l padding-left-m font-xl" id="typography">Typography</h3>
+        <p class="font-xxl font-weight-bold">Extra extra large fontsize</p>
+        <p class="font-xl">Extra large fontsize</p>
+        <p>Large fontsize</p>
+        <h3 class="margin-l padding-left-m font-xl" id="table">Table</h3>
+        <table class="row table c-tables-sortable" data-sorttable="true">
+          <thead>
+            <tr>
+              <th class="padding-top-m padding-bottom-m font-weight-bold sort" data-sorttable="default" scope="col">#</th>
+              <th class="padding-top-m padding-bottom-m font-weight-bold sort" data-sorttable="default" scope="col">col. 1</th>
+              <th class="padding-top-m padding-bottom-m font-weight-bold sort" data-sorttable="default" scope="col">col. 2</th>
+              <th class="padding-top-m padding-bottom-m font-weight-bold" scope="col">col. 3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">01</th>
+              <td>abcd</td>
+              <td>06</td>
+              <td>01/08/2012</td>
+            </tr>
+            <tr>
+              <th scope="row">02</th>
+              <td>vscd</td>
+              <td>02</td>
+              <td>12/03/2012</td>
+            </tr>
+            <tr>
+              <th scope="row">03</th>
+              <td>bcda</td>
+              <td>08</td>
+              <td>12/06/2012</td>
+            </tr>
+            <tr>
+              <th scope="row">04</th>
+              <td>cdab</td>
+              <td>01</td>
+              <td>01/07/2012</td>
+            </tr>
+            <tr>
+              <th scope="row">05</th>
+              <td>zrab</td>
+              <td>04</td>
+              <td>21/10/2012</td>
+            </tr>
+            <tr>
+              <th scope="row">06</th>
+              <td>abcd</td>
+              <td>06</td>
+              <td>01/08/2012</td>
+            </tr>
+            <tr>
+              <th scope="row">07</th>
+              <td>vscd</td>
+              <td>02</td>
+              <td>12/03/2012</td>
+            </tr>
+            <tr>
+              <th scope="row">08</th>
+              <td>bcda</td>
+              <td>08</td>
+              <td>12/06/2012</td>
+            </tr>
+            <tr>
+              <th scope="row">09</th>
+              <td>cdab</td>
+              <td>01</td>
+              <td>01/07/2012</td>
+            </tr>
+            <tr>
+              <th scope="row">10</th>
+              <td>zrab</td>
+              <td>04</td>
+              <td>21/10/2012</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </body>
 </html>

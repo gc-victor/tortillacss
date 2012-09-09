@@ -1,0 +1,31 @@
+// Example:
+// =======
+// <table class="table">
+//   <thead>
+//     <tr>
+//       <th>#</th>
+//       <th>col 1</th>
+//       <th>col 2</th>
+//     </tr>
+//   </thead>
+//   <tbody>
+//     <tr>
+//       <td>1</td>
+//       <td>A</td>
+//       <td>B</td>
+//     </tr>
+//   </tbody>
+// </table>
+
+// Table:
+// =======
+// Base table styles
+.table {
+  th, td {
+    padding: #{$masterNumberM}px;
+    vertical-align: top;
+  }
+  tbody th, tbody td {
+    border-top: 1px solid #888;
+  }
+}

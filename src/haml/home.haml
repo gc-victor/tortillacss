@@ -9,63 +9,125 @@
     /[if lt IE 9]
       %script{:src => "http://html5shiv.googlecode.com/svn/trunk/html5.js"}
   %body
-    #header.clearfix.row.margin-xxl.margin-auto{:role => "banner"}
-      %hgroup.float-left
-        %h1.font-xxl Tortilla Framework
-        %h2.font-xl.line-height-1.font-weight-normal Helps you write maintainable apps.
-      %ul.margin-l.float-right{:role => "navigation" }
-        %li.float-left
-          %a{:href => "#space"} Space
-        %li.float-left.padding-leftm
-          %a{:href => "#grid"} Grid
-        %li.float-left.padding-leftm
-          %a{:href => "#typography "} Typography
-    #main.row.margin-xxl.margin-auto{:role => "main"}
-      %h3#space.margin-l.padding-leftm.font-xl Space
-      -# %p Three margins sizes, just margin-top. $masterNumber (.margin-l), $masterNumber * 2 (.margin-xl) and $masterNumber * 3 (.margin-xxl).
-      %ul.clearfix.row.margin-l.border-0
-        %li.margin-xxl.border-0
-        %li.margin-xl.border-0
-        %li.margin-l.border-0
-      -# %p One padding size and 5 padding classes (.padding-topm, .padding-rightm, .padding-bottomm, .padding-leftm and all them in .padding), $masterNumber / 2.
-      %ul.clearfix.row.margin-l
-        %li.float-left.columns-1.gutter.padding-leftm.padding-rightm.columns-test
-          .inner.margin-auto.padding-right.padding-left
-            .inner.margin-auto
-        %li.float-left.columns-1.gutter.padding-leftm.padding-rightm.columns-test
-          .inner.margin-auto.padding-right.padding-left
-            .inner.margin-auto
-        %li.float-left.columns-1.gutter.padding-leftm.padding-rightm.columns-test
-          .inner.margin-auto.padding-right.padding-left
-            .inner.margin-auto
-        %li.float-left.columns-1.gutter.padding-leftm.padding-rightm.columns-test
-          .inner.margin-auto.padding-right.padding-left
-            .inner.margin-auto
-        %li.float-left.columns-1.gutter.padding-leftm.padding-rightm.columns-test
-          .inner.margin-auto.padding-right.padding-left
-            .inner.margin-auto
-        %li.float-left.columns-1.padding-leftm.padding-rightm.columns-test
-          .inner.margin-auto.padding-right.padding-left
-            .inner.margin-auto
-      %h3#grid.margin-l.padding-leftm.font-xl Grid
-      -# %p Grid system for modern browsers — IE8+, Firefox, Safari, Opera, Chrome.
-      %ul.clearfix.row.margin-l
-        %li.float-left.columns-1.gutter.grid-test 1
-        %li.float-left.columns-1.gutter.grid-test 1
-        %li.float-left.columns-1.gutter.grid-test 1
-        %li.float-left.columns-1.gutter.grid-test 1
-        %li.float-left.columns-1.gutter.grid-test 1
-        %li.float-left.columns-1.grid-test 1
-        %li.float-left.columns-2.gutter.margin-l.grid-test 2
-        %li.float-left.columns-2.gutter.margin-l.grid-test 2
-        %li.float-left.columns-2.margin-l.grid-test 2
-        %li.float-left.columns-3.gutter.margin-l.grid-test 3
-        %li.float-left.columns-3.margin-l.grid-test 3
-        %li.float-left.columns-4.gutter.margin-l.grid-test 4
-        %li.float-left.columns-2.margin-l.grid-test 2
-        %li.float-left.columns-5.gutter.margin-l.grid-test 5
-        %li.float-left.columns-1.margin-l.grid-test 1
-      %h3#typography.margin-l.padding-leftm.font-xl Typography
-      %p.font-xxl.font-weight-bold Extra extra large fontsize
-      %p.font-xl Extra large fontsize
-      %p Large fontsize
+    #container.row.margin-auto
+      #header.clearfix.margin-xxl{:role => "banner"}
+        %hgroup
+          %h1.font-xxl Tortilla Framework
+          %h2.font-xl.line-height-1.font-weight-normal Helps you write maintainable CSS/SCSS for your apps.
+        %ul.margin-l{:role => "navigation" }
+          %li.float-left
+            %a{:href => "#space"} Space
+          %li.float-left.padding-left-m
+            %a{:href => "#grid"} Grid
+          %li.float-left.padding-left-m
+            %a{:href => "#typography"} Typography
+          %li.float-left.padding-left-m
+            %a{:href => "#table"} Table
+      #main.margin-xxl{:role => "main"}
+        %h3#space.margin-l.padding-left-m.font-xl Space
+        -# %p Three margins sizes, just margin-top. $masterNumber (.margin-l), $masterNumber * 2 (.margin-xl) and $masterNumber * 3 (.margin-xxl).
+        %ul.clearfix.margin-l.border-0
+          %li.margin-xxl.border-0
+          %li.margin-xl.border-0
+          %li.margin-l.border-0
+        -# %p One padding size and 5 padding classes (.padding-top-m, .padding-right-m, .padding-bottom-m, .padding-left-m and all them in .padding), $masterNumber / 2.
+        %ul.clearfix.margin-l
+          %li.float-left.columns-1.gutter.padding-left-m.padding-right-m.columns-test
+            .inner.padding-right.padding-left
+              .inner
+          %li.float-left.columns-1.gutter.padding-left-m.padding-right-m.columns-test
+            .inner.padding-right.padding-left
+              .inner
+          %li.float-left.columns-1.gutter.padding-left-m.padding-right-m.columns-test
+            .inner.padding-right.padding-left
+              .inner
+          %li.float-left.columns-1.gutter.padding-left-m.padding-right-m.columns-test
+            .inner.padding-right.padding-left
+              .inner
+          %li.float-left.columns-1.gutter.padding-left-m.padding-right-m.columns-test
+            .inner.padding-right.padding-left
+              .inner
+          %li.float-left.columns-1.padding-left-m.padding-right-m.columns-test
+            .inner.padding-right.padding-left
+              .inner
+        %h3#grid.margin-l.padding-left-m.font-xl Grid
+        -# %p Grid system for modern browsers — IE8+, Firefox, Safari, Opera, Chrome.
+        %ul.clearfix.margin-l
+          %li.float-left.columns-1.gutter.grid-test 1
+          %li.float-left.columns-1.gutter.grid-test 1
+          %li.float-left.columns-1.gutter.grid-test 1
+          %li.float-left.columns-1.gutter.grid-test 1
+          %li.float-left.columns-1.gutter.grid-test 1
+          %li.float-left.columns-1.grid-test 1
+          %li.float-left.columns-2.gutter.margin-l.grid-test 2
+          %li.float-left.columns-2.gutter.margin-l.grid-test 2
+          %li.float-left.columns-2.margin-l.grid-test 2
+          %li.float-left.columns-3.gutter.margin-l.grid-test 3
+          %li.float-left.columns-3.margin-l.grid-test 3
+          %li.float-left.columns-4.gutter.margin-l.grid-test 4
+          %li.float-left.columns-2.margin-l.grid-test 2
+          %li.float-left.columns-5.gutter.margin-l.grid-test 5
+          %li.float-left.columns-1.margin-l.grid-test 1
+        %h3#typography.margin-l.padding-left-m.font-xl Typography
+        %p.font-xxl.font-weight-bold Extra extra large fontsize
+        %p.font-xl Extra large fontsize
+        %p Large fontsize
+        %h3#table.margin-l.padding-left-m.font-xl Table
+        %table.row.table.c-tables-sortable{"data-sorttable" => "true"}
+          %thead
+            %tr
+              %th.font-weight-bold.sort{"data-sorttable" => "default", :scope => "col"} #
+              %th.font-weight-bold.sort{"data-sorttable" => "default", :scope => "col"} col. 1
+              %th.font-weight-bold.sort{"data-sorttable" => "default", :scope => "col"} col. 2
+              %th.font-weight-bold{:scope => "col"} col. 3
+          %tbody
+            %tr
+              %th{:scope => "row"} 01
+              %td abcd
+              %td 06
+              %td 01/08/2012
+            %tr
+              %th{:scope => "row"} 02
+              %td vscd
+              %td 02
+              %td 12/03/2012
+            %tr
+              %th{:scope => "row"} 03
+              %td bcda
+              %td 08
+              %td 12/06/2012
+            %tr
+              %th{:scope => "row"} 04
+              %td cdab
+              %td 01
+              %td 01/07/2012
+            %tr
+              %th{:scope => "row"} 05
+              %td zrab
+              %td 04
+              %td 21/10/2012
+            %tr
+              %th{:scope => "row"} 06
+              %td abcd
+              %td 06
+              %td 01/08/2012
+            %tr
+              %th{:scope => "row"} 07
+              %td vscd
+              %td 02
+              %td 12/03/2012
+            %tr
+              %th{:scope => "row"} 08
+              %td bcda
+              %td 08
+              %td 12/06/2012
+            %tr
+              %th{:scope => "row"} 09
+              %td cdab
+              %td 01
+              %td 01/07/2012
+            %tr
+              %th{:scope => "row"} 10
+              %td zrab
+              %td 04
+              %td 21/10/2012
