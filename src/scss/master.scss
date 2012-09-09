@@ -7,16 +7,19 @@
 // ====
 @import "core/_core.vars.scss";
 @import "core/_core.functions.scss";
-// @import "core/_core.normalize.scss";
 // Development:
 // ===========
 @import "dev/_dev.tests.scss";
 // Base:
 // ====
-@import "base/_base.globals.scss";
-@import "base/_base.utils.scss";
-@import "base/_base.decorations.scss";
 @import "base/_base.colors.scss";
+@import "base/_base.decorations.scss";
+@import "base/_base.globals.scss";
+@import "base/_base.grids.scss";
 @import "base/_base.typography.scss";
 @import "base/_base.spaces.scss";
-@import "base/_base.grids.scss";
+@import "base/_base.utils.scss";
+// Component:
+// =========
+@import "component/_component.table.scss";
+@import "component/_component.table.sortable.scss";
