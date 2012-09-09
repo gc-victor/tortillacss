@@ -1,4 +1,25 @@
-/* c === component */
+// Example:
+// =======
+// <table class="table c-tables-sortable">
+//   <thead>
+//     <tr>
+//       <th class="sort">#</th>
+//       <th class="sort is-selected">col 1</th>
+//       <th>col 2</th>
+//     </tr>
+//   </thead>
+//   <tbody>
+//     <tr>
+//       <td>1</td>
+//       <td>A</td>
+//       <td>B</td>
+//     </tr>
+//   </tbody>
+// </table>
+
+// Table Sortable:
+// ==============
+// Module for sortable tables
 .c-tables-sortable {
   .sort {
     cursor: pointer;
