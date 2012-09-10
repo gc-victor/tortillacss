@@ -8,6 +8,10 @@
   font-size: fontSize($font-xl, $masterFontSize);
   line-height: lineHeight($font-xl, 2);
 }
+.font-ll {
+  font-size: fontSize($font-ll, $masterFontSize);
+  line-height: lineHeight($font-ll);
+}
 .font-l {
   font-size: fontSize($font-l, $masterFontSize);
   line-height: lineHeight($font-l);

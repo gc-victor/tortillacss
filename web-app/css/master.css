@@ -233,34 +233,40 @@ a:hover {
 }
 
 /* line 11, ../../src/scss/base/_base.typography.scss */
+.font-ll {
+  font-size: 1.231em;
+  line-height: 1.313em;
+}
+
+/* line 15, ../../src/scss/base/_base.typography.scss */
 .font-l {
   font-size: 1em;
   line-height: 1.615em;
 }
 
-/* line 15, ../../src/scss/base/_base.typography.scss */
+/* line 19, ../../src/scss/base/_base.typography.scss */
 .font-m {
   font-size: 0.846em;
   line-height: 1.909em;
 }
 
-/* line 19, ../../src/scss/base/_base.typography.scss */
+/* line 23, ../../src/scss/base/_base.typography.scss */
 .font-s {
   font-size: 0.769em;
   line-height: 2.1em;
 }
 
-/* line 25, ../../src/scss/base/_base.typography.scss */
+/* line 29, ../../src/scss/base/_base.typography.scss */
 .line-height-1 {
   line-height: 1em;
 }
 
-/* line 30, ../../src/scss/base/_base.typography.scss */
+/* line 34, ../../src/scss/base/_base.typography.scss */
 .font-weight-normal {
   font-weight: normal;
 }
 
-/* line 33, ../../src/scss/base/_base.typography.scss */
+/* line 37, ../../src/scss/base/_base.typography.scss */
 .font-weight-bold {
   font-weight: bold;
 }
